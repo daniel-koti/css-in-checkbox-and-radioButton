@@ -1,0 +1,166 @@
+:root {
+  --primary-100: #f4fafa;
+  --primary-300: #dfebeb;
+  --text-color: #10131c;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--primary-300);
+  color: var(--text-color);
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body * {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+form {
+  background-color: #fff;
+
+  /* Se o valor minímo é de 73rem, se for maior que isso ocupa 83% de largura da tela */
+  width: min(73rem, 87%);
+  margin: auto;
+  padding: 9rem;
+  border-radius: 3.2rem;
+
+  box-shadow: 0 0 4.8rem rgb(0 0 0 / 0.1);
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: "Space Grotesk", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+/* radio */
+.radio-wrapper {
+  border-radius: 1.6rem;
+  background-color: var(--primary-100);
+  border: 1px solid #bbc1c1;
+  padding: 2.4rem;
+}
+
+.radio-wrapper > div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.radio-wrapper input[type="radio"] {
+  appearance: none;
+
+  border: 1px solid #bbc1c1;
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.radio-wrapper input[type="radio"]:checked {
+  border: 6px solid black;
+}
+
+.radio-wrapper:not(:has(:checked)) {
+  opacity: 0.6;
+}
+
+.radio-wrapper label {
+  font-size: 2rem;
+}
+
+.radio-wrapper p {
+  padding-left: 1.6rem;
+  margin-top: 2rem;
+}
+
+legend + .radio-wrapper {
+  margin-top: 6rem;
+}
+
+.radio-wrapper + .radio-wrapper,
+.checkbox-wrapper + .checkbox-wrapper {
+  margin-top: 2.4rem;
+}
+
+/* checkbox */
+.checkbox-wrapper {
+  display: flex;
+  gap: 0.8rem;
+
+  padding-inline: 2.4rem;
+}
+
+.radio-wrapper + .checkbox-wrapper {
+  margin-top: 4.8rem;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+
+  /* Shrink diz que não aceita que o elemento encolha */
+  flex-shrink: 0;
+
+  height: 2.8rem;
+  width: 2.8rem;
+  border: 1px solid #6b7473;
+  border-radius: 0.8rem;
+  background-color: white;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked::before {
+  position: absolute;
+  content: "✔";
+  font-size: 2rem;
+
+  top: -0.2rem;
+  left: 0.4rem;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked:focus {
+  outline: 3px solid #10131c;
+}
+
+.checkbox-wrapper label {
+  margin-top: 0.4rem;
+}
+
+button {
+  margin-top: 5.8rem;
+  width: 100%;
+
+  background-color: #130f28;
+  border: 0;
+  color: #fff;
+  padding-block: 2rem;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin-top: 2.8rem;
+
+  font-weight: 400;
+}

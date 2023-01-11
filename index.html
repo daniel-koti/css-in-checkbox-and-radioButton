@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check & Radio Styles</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Choose a trial plan</legend>
+
+        <div class="radio-wrapper">
+          <div>
+            <input
+              type="radio"
+              name="plan"
+              id="plan-1"
+              value="plan-1"
+              checked
+            />
+            <label for="plan-1">Standard</label>
+          </div>
+
+          <p>
+            5 TB of space ipsum dolor sit amet consectetur, adipisicing elit.
+            sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+
+        <div class="radio-wrapper">
+          <div>
+            <input type="radio" name="plan" id="plan-2" value="plan-2" />
+            <label for="plan-2">Advanced</label>
+          </div>
+
+          <p>
+            As much space as you ipsum sit amet consectetur, adipisicing elit.
+            sit amet consectetur, adipisicing elit. dolor sit amet consectetur,
+            adipisicing elit.
+          </p>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">
+            I agree with <a href="#">terms and conditions</a> tetur, adipisicing
+            elit. sit amet consectetur, adipisicing elit. dolor sit amet
+            consectetur, adipisicing elit. tetur, adipisicing elit. sit amet
+            consectetur, adipisicing
+          </label>
+        </div>
+
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="mailing" id="mailing" />
+          <label for="mailing"> I'd like to received mailing messages </label>
+        </div>
+
+        <button type="submit">Start free trial</button>
+
+        <small>No credit card needed</small>
+      </fieldset>
+    </form>
+  </body>
+</html>
